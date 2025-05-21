@@ -50,7 +50,7 @@ function writeNotesFile(data: { notes: Note[] }) {
 // GET a single note by ID
 export async function GET(
   request: Request,
-  { params }: { params: { id: string } }
+  { params }: { params: any }
 ) {
   try {
     const id = params.id;
@@ -77,7 +77,7 @@ export async function GET(
 // PUT: Update a note by ID
 export async function PUT(
   request: Request,
-  { params }: { params: { id: string } }
+  { params }: { params: any }
 ) {
   try {
     const id = params.id;
@@ -139,7 +139,7 @@ export async function PUT(
 // DELETE: Delete a note by ID
 export async function DELETE(
   request: Request,
-  { params }: { params: { id: string } }
+  { params }: { params: any }
 ) {
   try {
     const id = params.id;
